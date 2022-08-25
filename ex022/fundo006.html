@@ -8,18 +8,25 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size:cover;
-            background-attachment: fixed;
+            background-attachment: fixed;*/
+
+            /* para usar o SHORTHAND-BACKGROUND, tem que ser nessa ordem. (color > image > position > repeat > size > attachment */
+
+            /*EM VEZ DE ESCREVER OS CODIGOS LÁ EM CIMA SO SE ESCREVE ASSIM:            
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
 
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;  
             border: 2px solid red;
