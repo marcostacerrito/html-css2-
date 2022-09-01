@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Assistant:wght@700 & família= Paixão+Um:wght@700 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Assistant:wght@700 &família = Sriracha & display=swap');
+
+:root {
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif; /* vai ficar no cabeçalho e rodapé*/
+    --fonte2:'Passion One', cursiva;   /* vai ser para titulos*/ 
+    --fonte3:'Sriracha', cursive;   /* vai ser para o conteúdo*/
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 html,body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /*Aqui estou uando 10% da largura da tela (vw) para diminuir a letra e aumentar automaticamente quando tiver que usar na tela de celular*/
 }
 header > p {
     padding-bottom: 50px;
@@ -37,6 +50,8 @@ section {
     padding-bottom: 10vh;   
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 4vw;
 }
 
 section.normal {
@@ -49,7 +64,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /*Serve para deixar a caixa de letras no tamanho exato do conteúdo*/
+    padding: 5px;
     background-color: rgb(112, 87, 87);
 }
 
@@ -59,4 +75,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte2);
 }
