@@ -51,7 +51,11 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 4vw;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -60,13 +64,26 @@ section.normal {
 
 }
 section.imagem {
-    background-color: rgb(97, 72, 72) ;
+    background-color: rgb(199, 173, 173) ;
     color: white;
+    box-shadow: inset 6px 6px 13px black; /*serve para dar sombra por dentro na imagem*/
+    background-attachment: fixed; /*a imagem fica fixa e ao rolar a pagina, as letras cruzam por cima dela */
 }
 section.imagem > p {
     display: inline-block; /*Serve para deixar a caixa de letras no tamanho exato do conteúdo*/
     padding: 5px;
-    background-color: rgb(112, 87, 87);
+    background-color: transparent;
+    text-shadow: 1px 1px 0px black; 
+
+}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; /* serve para alinhar a imagem de fundo a direita e centralizada*/
+    background-size: cover; /*diminue a imagem e fica maiss organizada*/
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover; /*diminue a imagem e fica maiss organizada*/
 }
 
 
