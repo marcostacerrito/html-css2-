@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho"> <!-- comando serve para monitorar e  mudar o tamanho da tela-->
+    <header>
+        <h1> Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">        
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 6</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque neque quam optio nobis doloremque officia ad aspernatur. Neque aut voluptates doloribus eligendi maiores quo labore at, perferendis autem quia veniam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti accusantium totam optio iusto a aliquam reprehenderit dolores rem similique! Maiores reprehenderit iure labore, ipsum dolore molestiae dignissimos cum necessitatibus fugit?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea laboriosam provident quae. Corrupti, cumque. Eum inventore dolore natus repellendus aliquam quisquam porro, ipsam ea accusantium voluptatum sed excepturi illo commodi?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, pariatur eos veniam voluptates similique consequuntur voluptatibus, unde magnam excepturi laudantium ut repellendus fugit. Ab modi nulla veritatis nisi quidem commodi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non inventore dolores alias nobis, suscipit facere repellat excepturi itaque beatae dolorum quae nisi provident asperiores sunt tenetur voluptas voluptatum libero consequatur?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias explicabo ipsam reiciendis temporibus inventore eligendi quod? Natus temporibus molestiae maxime veritatis, deleniti ipsum, repellat alias corporis in sed laboriosam velit!    
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto iste quibusdam blanditiis cupiditate praesentium vitae distinctio libero nam, minima hic commodi magni explicabo quod dolore inventore doloribus molestiae? Delectus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim eaque eos aspernatur laboriosam explicabo sit, deleniti, repellendus nulla doloribus ratione expedita molestiae praesentium magni iusto atque voluptatibus veritatis ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odit, eius error ab eaque et, voluptatibus sunt iste aliquid assumenda libero minima explicabo! Debitis dicta tenetur odio suscipit, necessitatibus dolores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repellat repudiandae nostrum sed porro reprehenderit perferendis, quam fuga magnam. Perspiciatis hic amet consequatur pariatur rerum quis earum qui tenetur molestiae!</p>
+
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if(window.innerWidth >=600) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display =='block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            } /* esses comandos em JAVA é para aparecer e desaparecer o menu. */
+
+        }
+    </script>
+</body>
+</html>
